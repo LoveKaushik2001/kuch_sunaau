@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+     <!--Style.css-->
+     <link rel="stylesheet" type="text/css" href="style.css">
+     
+    <title>Sign Up Page</title>
+</head>
+<body style="
+background-color: yellow;
+background-image: linear-gradient(to bottom right,red,yellow);">
+    <!--NAVBAR-->
+    <nav id="grad1">
+            <div class="nav-wrapper">
+              <a href="#!" class="center brand-logo" style="color: #a66659">KUCH SUNAAU</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="left hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#myUL">Shaayri</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html" class="btn">Home</a></li>
+                <li><a href="index.html#myUL">Shaayri</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+          
+          
+          <!--Form-->
+          <div class="row container">
+                <div class="col l1 m1 s12"></div>
+                <div class="col l10 m10 s12">
+                    <form name="myForm"  onsubmit="return validateForm();" method="POST" action="pronre.php">
+                     <div class="card-panel z-depth-5">
+                        
+                        <h5 class="center">Register</h5>
+                        <p class="center">Join to our community now !</p>
+                        
+                        
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" id="Name" name="Name" required>
+                            <label class="active" for="Name">Name</label>
+                        </div>
+                
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="Email" name="Email" required>
+                            <label class="active" for="Email">Email Address</label>
+                        </div>
+                          
+                        <div class="input-field">
+                            <i class="material-icons prefix">local_phone</i>
+                            <input type="number" id="PhoneNo" name="PhoneNo" min="000000000" max="9999999999" required>
+                            <label class="active" for="PhoneNo">Mobile No.</label>
+                        </div>
+                          
+                            
+                        <div class="input-field">
+                            <i class="material-icons prefix">lockq</i>
+                            <input type="password" id="pwd" name="pwd" required>
+                            <label class="active" for="pwd">Password</label>
+                        </div>
+                        
+                        <div class="input-field">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input type="password" id="npwd" name="pass2">
+                            <label for="npwd">Confirm password</label>
+                        </div>
+            
+                        <p class="left">					
+                            Already have an account? <a href="signin.html" class="modal-trigger">login</a>
+                        </p>
+                        <p class='right'>
+                            By signing up you agree to our <a href='tns.php'>terms & privacy policy</a>
+                        </p>
+                        <input type="submit" name="sign_up" value="yes" class="btn left col s12" style="
+                        background-color: yellow;
+                        background-image: linear-gradient(to top left, red,yellow);">
+            
+                        <div class="clearfix"></div>
+                    </div>
+                </form> 
+                </div>
+                </div>
+
+                 <!--FOOTER-->
+  
+  <footer class="page-footer" style="background-color: #ff7e00">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Follow my page kuch_sunaau on instagram</h5>
+            <p class="grey-text text-lighten-4">Follow for more shaayris</p>
+            <a  href="https://www.instagram.com/kuch_sunaau/"><img src="insta.jpg" class="responsive-img circle" height="70px" width="70px"></a> Account Name : Kuch_sunaau
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Contact Us here</h5>
+            <ul>
+              <li><a href="https://twitter.com/"><img src="twitter.jpg" class="responsive-img circle" height="70px" width="70px"></a>Acount Name : @Lovekaushik2001</li>
+              <li><a href="https://in.linkedin.com/"><img src="ln.png" class="responsive-img circle" height="70px" width="70px"></a>Account Name : Love Kaushik</li>
+              <li><a href="https://www.google.com/gmail/"><img src="gmail.jpg" class="responsive-img circle" height="70px" width="70px"></a>Email Id : lovekaushik2001@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      <div class="footer-copyright">
+        <div class="container">
+        ©Copyright
+        <a class="grey-text text-lighten-4 right" href="#!">Created By : Love Kaushik</a>
+        </div>
+      </div>
+    </footer>
+  
+
+   <!--Import jQuery before materialize.js-->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+   <script>
+     //sidenav for mobile demo
+      $(".button-collapse").sideNav();
+    </script>
+</body>
+</html>

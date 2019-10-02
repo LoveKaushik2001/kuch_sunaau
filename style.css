@@ -1,0 +1,34 @@
+
+#grad1 {
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+  
+#mobile-demo {
+    background-color: red;
+    background-image: linear-gradient(to right, red , yellow); 
+}
+.slider .slides li img {
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+
+  .brand-logo:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 0%;
+    height: 7px;
+    background: blue;
+  }.brand-logo:hover:before{width: 100%; transition: 1s;}
+  
+  .brand-logo:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -3%;
+    width: 0%;
+    height: 7px;
+    background: blue;
+  }.brand-logo:hover:after{width: 100%; transition: 1s;}

@@ -1,0 +1,78 @@
+.todo{
+    box-sizing: border-box;
+}
+  /* Remove margins and padding from the list */
+  .todo ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  .todo ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    font-size: 18px;
+    transition: 0.2s;
+  
+   
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+ .todo ul li:nth-child(odd) {
+    background-color: yellow;
+    background-image: linear-gradient(to bottom right, yellow, red);
+  }
+  
+  /* Darker background-color on hover */
+  .todo ul li:hover {
+    background: red;
+  }
+  
+
+  /* Style the header */
+  .header {
+    background-color: #ff7338;
+    padding: 20px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 60%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    margin-left: 20px;
+    padding: 10px;
+    width: 25%;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: pink;
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+     <!--Style.css-->
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Login</title>
+</head>
+<body>
+        <!--NAVBAR-->
+        <nav id="grad1">
+                <div class="nav-wrapper">
+                  <a href="#!" class="center brand-logo" style="color: #a66659">KUCH SUNAAU</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#myUL">Shaayri</a></li>
+                  </ul>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="btn" style="border-radius: 25px">Sign Out</a></li>
+                  </ul>
+                  <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="index.html#myUL">Shaayri</a></li>
+                    <li><a href="index.html">Sign Out</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+              
+          <div class="row container" style="background-color: white">
+              <div class="col l2 m2 s12"></div>
+              <div class="col l5 m5 s12">
+              <div class="form">
+                  <h1>Log In</h1>
+                  <form action="" method="post" name="login">
+                  <input type="text" name="username" placeholder="Username" required />
+                  <input type="password" name="password" placeholder="Password" required />
+                  <br>
+                  <input name="submit" type="submit" value="Login" />
+                  </form>
+                  <p>Not registered yet? <a href='signup.html'>Register Here</a></p>
+              </div>
+              </div>
+              </div>
+    
+                 <!--FOOTER-->
+  
+                 <footer class="page-footer" style="background-color: #ff7e00">
+                    <div class="row">
+                      <div class="col l6 s12">
+                        <h5 class="white-text">Follow my page kuch_sunaau on instagram</h5>
+                        <p class="grey-text text-lighten-4">Follow for more shaayris</p>
+                        <a  href="https://www.instagram.com/kuch_sunaau/"><img src="insta.jpg" class="responsive-img circle" height="70px" width="70px"></a> Account Name : Kuch_sunaau
+                      </div>
+                      <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Contact Us here</h5>
+                        <ul>
+                          <li><a href="https://twitter.com/"><img src="twitter.jpg" class="responsive-img circle" height="70px" width="70px"></a>Acount Name : @Lovekaushik2001</li>
+                          <li><a href="https://in.linkedin.com/"><img src="ln.png" class="responsive-img circle" height="70px" width="70px"></a>Account Name : Love Kaushik</li>
+                          <li><a href="https://www.google.com/gmail/"><img src="gmail.jpg" class="responsive-img circle" height="70px" width="70px"></a>Email Id : lovekaushik2001@gmail.com</li>
+                        </ul>
+                      </div>
+                    </div>
+                  <div class="footer-copyright">
+                    <div class="container">
+                    ©Copyright
+                    <a class="grey-text text-lighten-4 right" href="#!">Created By : Love Kaushik</a>
+                    </div>
+                  </div>
+                </footer>
+
+   <!--Import jQuery before materialize.js-->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+   <script>
+     //sidenav for mobile demo
+      $(".button-collapse").sideNav();
+    </script>
+</body>
+</html>
